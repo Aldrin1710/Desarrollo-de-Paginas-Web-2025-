@@ -6,7 +6,7 @@ Repositorio para la recepción de cada una de las entregas del proyecto de la as
 
 | Nombre | Rol | Fotografia |
 |--------|-----|------------|
-| [Guiseph Alexis Chan Torres](https://github.com/CarlosRomero123)| N/A |Integrante.jpg |
+| [Giuseph Alexis Chan Torres](https://github.com/CarlosRomero123)| N/A | <img src="https://i.ibb.co/s9x1S69z/Screenshot-2024-04-06-214034.png" width="150" height="250"/> |
 | [Aldrin Enique Novelo Góngora](https://github.com/Aldrin1710)| N/A | <img src="/Assets/AldrinNovelo.jpg" width="150" height="250"/>|
 | [Carlos Emmanuel Romerto Poot](https://github.com/CarlosRomero123)| N/A |Integrante.jpg |
 | [Erick Ricardo Vega Nolasco](https://pages.github.com/)| N/A | Integrante.jpg |
