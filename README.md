@@ -13,6 +13,6 @@ Repositorio para la recepción de cada una de las entregas del proyecto de la as
 
 ##  :computer: Entregas del proyecto
 
-:one: [Primera Entrega](https://github.com/Aldrin1710/Desarrollo-de-Paginas-Web-2025/blob/main/Entregas/Primera%20Entrega)
+:one: [Primera Entrega](https://github.com/Aldrin1710/Desarrollo-de-Paginas-Web-2025-/blob/main/Entregas/Primera%20Entrega)
 
 :arrow_double_down: [Entrega final](https://github.com/Aldrin1710/Desarrollo-de-Paginas-Web-2025-/blob/main/Entregas/Entrega%20Final)
