@@ -1,5 +1,5 @@
 <?php
-    // abrimos la conexión a la BD 
+
     include 'conexion.php';
 
     $nombre_usuario = trim($_POST['usuario']);
@@ -28,14 +28,15 @@
 
     try{
         //Verificar si el correo o usuario ya existe en la BD
-        $sql_verificar_credenciales = "SELECT usuario, correo FROM usuarios WHERE usuario = ? OR correo = ?";
+        // Cambiado: usuario → nombre
+        $sql_verificar_credenciales = "SELECT nombre, correo FROM usuarios WHERE nombre = ? OR correo = ?";
         $sentencia_verificar = $conn->prepare($sql_verificar_credenciales);
         $sentencia_verificar->execute([$nombre_usuario, $correo_usuario]);
 
         $fila = $sentencia_verificar->fetch(PDO::FETCH_ASSOC);
 
         if($fila){
-            if ($fila['usuario'] === $nombre_usuario) {
+            if ($fila['nombre'] === $nombre_usuario) {
                 header('Location: registro.php?error=usuario_invalido' . $datos_usuario);
             } elseif ($fila['correo'] === $correo_usuario) {
                 header('Location: registro.php?error=correo_invalido' . $datos_usuario);
@@ -43,11 +44,9 @@
             exit();
         }
 
-        //Hacemos el hashing de la primera contraseña
         $contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
 
-        //Preparamos la consulta...
-        $sql = "INSERT INTO usuarios (usuario, correo, contrasena) VALUES (?,?,?)";
+        $sql = "INSERT INTO usuarios (nombre, correo, contrasena) VALUES (?,?,?)";
 
         $sentencia_agregar = $conn->prepare($sql); 
 
